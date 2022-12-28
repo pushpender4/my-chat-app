@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    display: block;
+    margin: 12px auto;
+    height: 50px;
+    width: 50px;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(109, 39, 209));
+}
+
+h1 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 30px;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    height: 80vh;
+    max-width: 600px;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    overflow-y: auto;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+
+.message {
+    width: 44%;
+    padding: 10px;
+    margin: 5px 12px;
+    border: 2px solid black;
+    color: white;
+    font-size: 1rem;
+}
+.lef{
+    float: left;
+    clear: both;
+    border: none;
+    color: black;
+    text-shadow: 2px 6px 6px rgba(73, 133, 154, 0.74);
+    margin-bottom: -15px;
+    margin-top: -10px;
+    margin-left: -1px;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: capitalize;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Balsamiq Sans', cursive;
+}
+.left {
+    float: left;
+    background-color: black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    clear: both;
+}
+.leftt {
+    display: block;
+    text-align: center;
+    margin: auto;
+    clear: both;
+    border: none;
+    color: white;
+    text-shadow: 4px 1px 6px rgba(9, 0, 0, 1);
+    font-family: 'Roboto Mono', monospace;
+}
+
+.right {
+    float: right;
+    background-color: rgb(24, 5, 89);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    clear: both;
+}
+
+#send-container {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+#messageInp {
+    width: 515px;
+    margin: auto;
+    padding: 2px;
+    height: 40px;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 4px;
+}
+
+.btn {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(0, 106, 255);
+    color: rgb(0, 106, 255);
+    padding: 8px 18px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    font-family: 'Source Serif 4', sans-serif;
+    font-weight: 500;
+}
+
+
+.btn:hover {
+    color: white;
+    border: 2px solid rgb(0, 106, 255);
+    background-color: rgb(0, 106, 255);
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*--------------------------------------------------------- media queries -------------------------- */
+@media screen and (max-width:601px) {
+    #messageInp {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width:535px) {
+    #messageInp {
+        width: 375px;
+    }
+}
+
+@media screen and (max-width:465px) {
+    #messageInp {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:385px) {
+    #messageInp {
+        width: 250px;
+    }
+}
